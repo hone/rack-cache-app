@@ -6,7 +6,9 @@ class RackCacheApp < Sinatra::Base
   $cache = Memcached.new
 
   use Rack::Cache,
-    :verbose => true
+    :verbose => true,
+    :metastore => $cache,
+    :entitystore => $cache
 
   get "/" do
     cache_control :public, :max_age => 2 * 60
