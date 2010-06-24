@@ -8,6 +8,7 @@ having it conflict with Varnish
   git clone git://github.com/hone/rack-cache-app.git
   heroku create --app bamboo
   git push heroku master
+  heroku addons:add memcache:5mb
 
 == Copyright / Licensing
 
