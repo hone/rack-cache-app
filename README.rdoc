@@ -10,6 +10,10 @@ having it conflict with Varnish
   git push heroku master
   heroku addons:add memcache:5mb
 
+== Example
+
+I have an example running on heroku: http://rack-cache-hone.heroku.com
+
 == Copyright / Licensing
 
 Copyright (c) 2010 Terence Lee.
